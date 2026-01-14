@@ -11,7 +11,7 @@ BAR_COLOR = (200, 200, 200)
 BAR_OUTLINE_COLOR = (120, 120, 120)
 
 PLAYER_BAR_WIDTH = 120
-PLAYER_BAR_HEIGHT = 12
+PLAYER_BAR_HEIGHT = BAR_HEIGHT
 PLAYER_BAR_COLOR = (0, 0, 0)
 PLAYER_SPEED = 260
 
@@ -110,7 +110,7 @@ def main() -> None:
 
         player_rect = pygame.Rect(
             player_x,
-            bar_rect.centery + BAR_HEIGHT / 2 - PLAYER_BAR_HEIGHT / 2,
+            bar_rect.top,
             PLAYER_BAR_WIDTH,
             PLAYER_BAR_HEIGHT,
         )
